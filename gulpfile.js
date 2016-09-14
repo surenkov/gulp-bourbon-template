@@ -21,7 +21,6 @@ const path = {
         js: 'dist/static/js/',
         img: 'dist/static/assets/img/',
         fonts: 'dist/static/assets/fonts/',
-        icons: 'dist/static/icons/'
     },
     src: {
         html: 'src/**/*.html',
@@ -29,7 +28,6 @@ const path = {
         sass: 'src/styles/**/*.scss',
         img: 'src/assets/img/**/*.*',
         fonts: 'src/assets/fonts/**/*.*',
-        icons: 'src/assets/icons/*.*'
     },
     watch: {
         html: 'src/**/*.html',
@@ -37,7 +35,6 @@ const path = {
         sass: 'src/styles/**/*.scss',
         img: 'src/assets/img/**/*.*',
         fonts: 'src/assets/fonts/**/*.*',
-        icons: 'src/assets/icons/*.*'
     },
     clean: ['dist/static/**'],
     sassIncludes: _.flatten([
@@ -102,8 +99,7 @@ gulp.task('build', [
     'js:build',
     'sass:build',
     'img:build',
-    'fonts:build',
-    'icons:build'
+    'fonts:build'
 ]);
 
 gulp.task('watch', () => {
